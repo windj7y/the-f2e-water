@@ -1,0 +1,13 @@
+.navbar-nav {
+  @include media-breakpoint-up(lg) {
+    .nav-item:not(:last-child) {
+      &::after {
+        content: '｜';
+      }
+    }
+  
+    .nav-link {
+      display: inline-block;
+    }
+  }
+}
